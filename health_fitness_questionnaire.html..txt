@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holistic Health & Fitness Program Questionnaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .submit-btn {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .submit-btn:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Holistic Health & Fitness Program Questionnaire</h1>
+        <form action="#" method="POST">
+            <!-- Personal Information -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" name="gender" required>
+            
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Health Background -->
+            <label for="activity">Current activity level:</label>
+            <select id="activity" name="activity">
+                <option value="sedentary">Sedentary</option>
+                <option value="lightly_active">Lightly active</option>
+                <option value="moderately_active">Moderately active</option>
+                <option value="very_active">Very active</option>
+            </select>
+            
+            <label for="conditions">Existing medical conditions:</label>
+            <input type="text" id="conditions" name="conditions">
+            
+            <label for="medications">Current medications:</label>
+            <input type="text" id="medications" name="medications">
+
+            <!-- Fitness Goals -->
+            <label for="goals">Primary goals:</label>
+            <select id="goals" name="goals" multiple>
+                <option value="weight_loss">Weight loss</option>
+                <option value="muscle_gain">Muscle gain</option>
+                <option value="endurance">Endurance</option>
+                <option value="flexibility">Flexibility</option>
+                <option value="stress_relief">Stress relief</option>
+                <option value="overall_health">Overall health</option>
+            </select>
+
+            <!-- Diet and Nutrition -->
+            <label for="diet">Specific diet:</label>
+            <input type="text" id="diet" name="diet">
+            
+            <label for="meals">Meals per day:</label>
+            <select id="meals" name="meals">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4+</option>
+            </select>
+            
+            <label for="allergies">Food allergies/restrictions:</label>
+            <input type="text" id="allergies" name="allergies">
+
+            <!-- Lifestyle -->
+            <label for="sleep">Average sleep per night:</label>
+            <select id="sleep" name="sleep">
+                <option value="<5">Less than 5 hours</option>
+                <option value="5-6">5-6 hours</option>
+                <option value="7-8">7-8 hours</option>
+                <option value=">8">More than 8 hours</option>
+            </select>
+            
+            <label for="tobacco">Tobacco use:</label>
+            <select id="tobacco" name="tobacco">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            
+            <label for="alcohol">Alcohol consumption:</label>
+            <select id="alcohol" name="alcohol">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            
+            <label for="stress">Stress frequency:</label>
+            <select id="stress" name="stress">
+                <option value="rarely">Rarely</option>
+                <option value="occasionally">Occasionally</option>
+                <option value="frequently">Frequently</option>
+                <option value="always">Always</option>
+            </select>
+
+            <!-- Program Preferences -->
+            <label for="programs">Interested programs:</label>
+            <select id="programs" name="programs" multiple>
+                <option value="live_classes">Live classes</option>
+                <option value="pre_recorded_sessions">Pre-recorded sessions</option>
+                <option value="personal_coaching">Personal coaching</option>
+                <option value="group_challenges">Group challenges</option>
+                <option value="nutrition_guidance">Nutrition guidance</option>
+            </select>
+            
+            <label for="time">Preferred time for fitness activities:</label>
+            <select id="time" name="time">
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+                <option value="night">Night</option>
+            </select>
+            
+            <label for="updates">Update frequency:</label>
+            <select id="updates" name="updates">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="bi_weekly">Bi-weekly</option>
+                <option value="monthly">Monthly</option>
+            </select>
+
+            <!-- Additional Information -->
+            <label for="additional">Other health and fitness needs/goals:</label>
+            <textarea id="additional" name="additional"></textarea>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
